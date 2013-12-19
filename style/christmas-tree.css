@@ -1,0 +1,248 @@
+
+/* The tree */
+.tree {
+    position: absolute;
+    left: 50%;
+    top:15%;
+    font-size: 0.8em;
+}
+
+
+
+/* The leaves */
+
+.leaf {
+    height: 0;
+    position: absolute;
+    width: 0;    
+
+    border-radius: 4em;
+    -moz-border-radius: 4em;
+    -webkit-border-radius: 4em;
+}
+
+.leaf {
+    z-index: 2;    
+}
+
+.tree .leaf:nth-child(1) {
+    border-left: 4em solid transparent;
+    border-right: 4em solid transparent;
+    border-bottom: 4em solid green;
+    left: -4em;
+    top: 2em;
+}
+.tree .leaf:nth-child(2) {
+    border-left: 6em solid transparent;
+    border-right: 6em solid transparent;
+    border-bottom: 6em solid green;
+    left: -6em;
+    top: 4em;
+}
+.tree .leaf:nth-child(3) {
+    border-left: 8em solid transparent;
+    border-right: 8em solid transparent;
+    border-bottom: 8em solid green;
+    left: -8em;
+    top: 6em;
+}
+.tree .leaf:nth-child(4) {
+    border-left: 10em solid transparent;
+    border-right: 10em solid transparent;
+    border-bottom: 10em solid green;
+    left: -10em;
+    top: 8em;
+}
+.tree .leaf:nth-child(5) {
+    border-left: 12em solid transparent;
+    border-right: 12em solid transparent;
+    border-bottom: 12em solid green;
+    left: -12em;
+    top: 10em;
+}
+.tree .leaf:nth-child(6) {
+    border-left: 14em solid transparent;
+    border-right: 14em solid transparent;
+    border-bottom: 14em solid green;
+    left: -14em;
+    top: 12em;
+}
+
+
+/* The baubles */
+
+.bauble-container
+{
+    position: absolute;
+    z-index: 9;
+    list-style: none;
+    width: 100%;  
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bauble-container li
+{
+    position: absolute;
+}
+.bauble-container li:nth-child(1)
+{
+    top:5em;
+    left:-1.5em;
+}
+.bauble-container li:nth-child(2)
+{
+    top:18em;
+    left:2em;
+}
+.bauble-container li:nth-child(3)
+{
+    top:11em;
+    right:1em;
+}
+.bauble-container li:nth-child(4)
+{
+    top:11em;
+    left:1em;
+}
+.bauble-container li:nth-child(5)
+{
+    top:18em;
+    right:2em;
+}
+
+.bauble-container li:before
+{
+    content: "";
+    background: #dadada;	
+    background: -moz-linear-gradient(bottom, #9c9c9c, rgba(255,255,255,0) );
+    background: -webkit-gradient(linear, left bottom, right top, from(#9c9c9c), color-stop(100%, rgba(255,255,255,0))); 
+    height: 2em;
+    width: 0.2em;
+    display: block;
+    margin: 0 auto;
+}
+
+.bauble-container li:nth-child(2)
+{
+    transform: rotate(-5deg);
+}
+
+.bauble-container li:nth-child(3)
+{
+    transform: rotate(5deg);
+}
+.bauble-container li:nth-child(4)
+{
+    transform: rotate(-5deg);
+}
+
+.bauble-container li:nth-child(5)
+{
+    transform: rotate(5deg);
+}
+
+.bauble
+{
+    font-size: 1em;
+
+    border-radius: 3em;
+    -moz-border-radius: 3em;
+    -webkit-border-radius: 3em;
+
+    -moz-box-shadow: 0 0 0.5em #777777;
+    box-shadow: 0 0 0.5em #777777;
+    -webkit-box-shadow: 0 0 0.5em #777777;
+    ˙
+    border: 0.1em solid rgba(0,0,0,0.3);
+    position: relative;
+    height: 3em;
+    width: 3em;  
+}
+
+.bauble:before
+{
+    content: "";
+
+    background: #fff;
+    background: -moz-linear-gradient(left, #fff, #9c9c9c, #fff, #9c9c9c );
+    background: -webkit-gradient(linear, left center, right center, from(#fff), color-stop(25%, #9c9c9c), color-stop(50%, #fff), color-stop(75%, #9c9c9c)); 
+
+    border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+
+    box-shadow: 0 0.1em 0 rgba(0,0,0,0.2), 0 -0.1em 0 rgba(255,255,255,0.3) inset;
+
+    border: 0.1em solid #dadada ;
+    height: 0.2em;
+    width: 0.6em;		
+    position: absolute;
+    left: 50%;
+    top: -0.3em;
+    margin-left: -0.35em;
+}
+
+
+.pink.bauble
+{
+    background: #f44cf7;
+}
+
+.red.bauble
+{
+    background: #c8171f; 
+}
+
+.blue.bauble
+{               
+    background: #00a1ee;
+}
+
+.yellow.bauble
+{
+    background: #fcb83d;
+}
+
+.green.bauble
+{
+    background: #4d8d00;
+}
+
+
+
+/* The ground */
+
+.ground {
+    position: absolute;
+    z-index: 15;
+    top: 70%;
+    left: 0;
+    margin-left: -50%;
+    width: 50em;
+    height: 50em;
+    background: #e2e2e2;
+
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+}
+.ground:before , .ground:after {
+    overflow: hidden;
+    background-color: #fff;
+    content: "";
+    height: 50em;
+    position: absolute;
+    top: -2em;
+    width: 50em;
+
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+}
+.ground:before {
+    left: 20em;
+}
+.ground:after {
+    right: 20em;
+}

@@ -1,0 +1,8 @@
+html, body {
+    overflow: hidden;    
+}
+
+html, body, p, h1, h2 {
+    padding: 0;
+    margin: 0;
+}
