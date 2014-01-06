@@ -6,7 +6,7 @@ It has originally been developed for [this MDN page](https://developer.mozilla.o
 
 The demo is published [here](http://www.francesco.iovine.name/mdn/xmas-tales/public_html/).
 
-![Screenshot](]https://mdn.mozillademos.org/files/6725/pages.png)
+![Screenshot](https://mdn.mozillademos.org/files/6725/pages.png)
 
 ## Notes
 
