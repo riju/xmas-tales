@@ -4,7 +4,7 @@ XMAS Tales is an e-book reader app for kids that uses the Ambient Light API to r
 
 ![Screenshot](https://mdn.mozillademos.org/files/6725/pages.png)
 
-Try it [live](http://www.francesco.iovine.name/mdn/xmas-tales/public_html/).
+Try it [live](http://goo.gl/Dzc59h).
 
 This demo has originally been developed for [this MDN page](https://developer.mozilla.org/en-US/Apps/Developing/gather_and_modify_data/Responding_to_light_conditions) that looks at one way to respond to light conditions in the context of Open Web Apps: The Ambient Light API.
 
