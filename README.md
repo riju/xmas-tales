@@ -19,8 +19,8 @@ Try it [live](http://goo.gl/Dzc59h).
 
 ## Contributing
 
+- open github issues
+- add tests
 - add more pages to the e-book
 - handle small resolutions
 - new themes and stories
-- add tests
-- open github issues
