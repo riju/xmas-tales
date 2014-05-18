@@ -1,42 +1,44 @@
 
-function AmbientLightManager() {
+var AmbientLightManager = {
+    /* 
+     * init
+     * Initialize the object
+     */
+    init: function() {
 
-    console.log("AmbientLightManager()");
+        console.log("AmbientLightManager.init()");
 
-    /* Initialize DOM Objects */
-    this.ambient = document.querySelector('.ambient');
-    this.lux = document.querySelector('#lux');
+        /* Initialize DOM Objects */
+        this.ambient = document.querySelector('.ambient');
+        this.lux = document.querySelector('#lux');
 
-    var _self = this;
+        var _self = this;
 
-    /* Ambient Light Events */
-    window.addEventListener('devicelight', function(deviceLightEvent) {
+        /* Ambient Light Events */
+        window.addEventListener('devicelight', function(deviceLightEvent) {
 
-        /* Debug */
-        console.log(deviceLightEvent);
+            /* Debug */
+            console.log(deviceLightEvent);
 
-        /* Ambient light level (lux) to screen */
-        _self.printLux(deviceLightEvent.value);
+            /* Ambient light level (lux) to screen */
+            _self.printLux(deviceLightEvent.value);
 
-        /* Check ambient light status */
-        if (deviceLightEvent.value > 500) { // snow
-            _self.setSnow();
-        }
-        else if (deviceLightEvent.value > 100) { // morning
-            _self.setMorning();
-        }
-        else if (deviceLightEvent.value > 10) { // evening
-            _self.setEvening();
-        }
-        else { // night
-            _self.setNight();
-        }
+            /* Check ambient light status */
+            if (deviceLightEvent.value > 500) { // snow
+                _self.setSnow();
+            }
+            else if (deviceLightEvent.value > 100) { // morning
+                _self.setMorning();
+            }
+            else if (deviceLightEvent.value > 10) { // evening
+                _self.setEvening();
+            }
+            else { // night
+                _self.setNight();
+            }
 
-    });
-}
-
-
-AmbientLightManager.prototype = {
+        });
+    },
     /*
      * printLux
      * Print the level of the ambient light in lux

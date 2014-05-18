@@ -1,27 +1,28 @@
 
-function ChristmasTreeViewController() {
+var ChristmasTree = {
+    /* 
+     * init
+     * Initialize the object
+     */
+    init: function() {
+        console.log("ChristmasTree.init()");
 
-    console.log("ChristmasTreeViewController()");
+        /* Initialize DOM Objects */
+        this.pinkBauble = document.querySelector('.pink.bauble');
+        this.redBauble = document.querySelector('.red.bauble');
+        this.blueBauble = document.querySelector('.blue.bauble');
+        this.yellowBauble = document.querySelector('.yellow.bauble');
+        this.greenBauble = document.querySelector('.green.bauble');
 
-    /* Initialize DOM Objects */
-    this.pinkBauble = document.querySelector('.pink.bauble');
-    this.redBauble = document.querySelector('.red.bauble');
-    this.blueBauble = document.querySelector('.blue.bauble');
-    this.yellowBauble = document.querySelector('.yellow.bauble');
-    this.greenBauble = document.querySelector('.green.bauble');
-
-    /* Turn Christmas Tree lights on */
-    this.blinkRandomly();
-}
-
-
-ChristmasTreeViewController.prototype = {
+        /* Turn Christmas Tree lights on */
+        this.blinkRandomly();
+    },
     /* 
      * blinkRandomly
      * Make baubles blink randomly     
      */
     blinkRandomly: function() {
-        console.log('ChristmasTreeViewController.blinkRandomly');
+        console.log('ChristmasTree.blinkRandomly');
 
         var _self = this;
 
