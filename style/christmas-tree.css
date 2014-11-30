@@ -11,7 +11,7 @@
 
 /* The leaves */
 
-.leaf {
+.branch {
     height: 0;
     position: absolute;
     width: 0;    
@@ -21,46 +21,46 @@
     -webkit-border-radius: 4em;
 }
 
-.leaf {
+.branch {
     z-index: 2;    
 }
 
-.tree .leaf:nth-child(1) {
+.tree .branch:nth-child(1) {
     border-left: 4em solid transparent;
     border-right: 4em solid transparent;
     border-bottom: 4em solid green;
     left: -4em;
     top: 2em;
 }
-.tree .leaf:nth-child(2) {
+.tree .branch:nth-child(2) {
     border-left: 6em solid transparent;
     border-right: 6em solid transparent;
     border-bottom: 6em solid green;
     left: -6em;
     top: 4em;
 }
-.tree .leaf:nth-child(3) {
+.tree .branch:nth-child(3) {
     border-left: 8em solid transparent;
     border-right: 8em solid transparent;
     border-bottom: 8em solid green;
     left: -8em;
     top: 6em;
 }
-.tree .leaf:nth-child(4) {
+.tree .branch:nth-child(4) {
     border-left: 10em solid transparent;
     border-right: 10em solid transparent;
     border-bottom: 10em solid green;
     left: -10em;
     top: 8em;
 }
-.tree .leaf:nth-child(5) {
+.tree .branch:nth-child(5) {
     border-left: 12em solid transparent;
     border-right: 12em solid transparent;
     border-bottom: 12em solid green;
     left: -12em;
     top: 10em;
 }
-.tree .leaf:nth-child(6) {
+.tree .branch:nth-child(6) {
     border-left: 14em solid transparent;
     border-right: 14em solid transparent;
     border-bottom: 14em solid green;
