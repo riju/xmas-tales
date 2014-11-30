@@ -9,7 +9,7 @@ var AmbientLightManager = {
         console.log("AmbientLightManager.init()");
 
         /* Initialize DOM Objects */
-        this.ambient = document.querySelector('.ambient');
+        this.ambience = document.querySelector('.ambience');
         this.lux = document.querySelector('#lux');
 
         var _self = this;
@@ -49,15 +49,15 @@ var AmbientLightManager = {
     },
     /*
      * setSnow
-     * Show a well-lighted ambient
+     * Show a well-lighted ambience
      */
     setSnow: function() {
         console.log('AmbientLightManager.setSnow');
 
-        this.ambient.classList.remove('night');
-        this.ambient.classList.remove('evening');
-        this.ambient.classList.remove('morning');
-        this.ambient.classList.add('snow');
+        this.ambience.classList.remove('night');
+        this.ambience.classList.remove('evening');
+        this.ambience.classList.remove('morning');
+        this.ambience.classList.add('snow');
     },
     /*
      * setMorning
@@ -66,10 +66,10 @@ var AmbientLightManager = {
     setMorning: function() {
         console.log('AmbientLightManager.setMorning');
 
-        this.ambient.classList.remove('night');
-        this.ambient.classList.remove('evening');
-        this.ambient.classList.remove('snow');
-        this.ambient.classList.add('morning');
+        this.ambience.classList.remove('night');
+        this.ambience.classList.remove('evening');
+        this.ambience.classList.remove('snow');
+        this.ambience.classList.add('morning');
     },
     /*
      * setEvening
@@ -78,10 +78,10 @@ var AmbientLightManager = {
     setEvening: function() {
         console.log('AmbientLightManager.setevening');
 
-        this.ambient.classList.remove('night');
-        this.ambient.classList.remove('morning');
-        this.ambient.classList.remove('snow');
-        this.ambient.classList.add('evening');
+        this.ambience.classList.remove('night');
+        this.ambience.classList.remove('morning');
+        this.ambience.classList.remove('snow');
+        this.ambience.classList.add('evening');
     },
     /*
      * setEvening
@@ -90,9 +90,9 @@ var AmbientLightManager = {
     setNight: function() {
         console.log('AmbientLightManager.setNight');
 
-        this.ambient.classList.remove('evening');
-        this.ambient.classList.remove('morning');
-        this.ambient.classList.remove('snow');
-        this.ambient.classList.add('night');
+        this.ambience.classList.remove('evening');
+        this.ambience.classList.remove('morning');
+        this.ambience.classList.remove('snow');
+        this.ambience.classList.add('night');
     }
 };

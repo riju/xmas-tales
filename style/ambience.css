@@ -1,22 +1,22 @@
 
 
-.ambient {
+.ambience {
 }
 
 
 /* The sky */
 
-.snow.ambient .sky {
+.snow.ambience .sky {
     background: whitesmoke!important;    
 }
-.morning.ambient .sky  {
+.morning.ambience .sky  {
     background: skyblue!important;
 }
-.evening.ambient .sky  {
+.evening.ambience .sky  {
     color: whitesmoke!important;
     background: darksalmon!important;
 }
-.night.ambient .sky {
+.night.ambience .sky {
     color: whitesmoke!important;
 
     background-color: #080A38!important; 
@@ -47,7 +47,7 @@
 
 /* Baubles ON */
 
-.night.ambient .bauble.on:after
+.night.ambience .bauble.on:after
 {
     content: "";
 
@@ -74,7 +74,7 @@
     visibility: hidden;
 }
 
-.night.ambient .message {
+.night.ambience .message {
     visibility: visible;
     position: absolute;
     width: 50%;
@@ -95,24 +95,24 @@
 
 /* Instructions */
 
-.snow.ambient .instructions {
+.snow.ambience .instructions {
     color: darkgreen;
 }
-.morning.ambient .instructions {
+.morning.ambience .instructions {
     color: whitesmoke;
 }
-.evening.ambient .instructions {
+.evening.ambience .instructions {
     color: whitesmoke;
 }
-.night.ambient .instructions {
+.night.ambience .instructions {
     visibility: hidden;
 }
 
-/*.night.ambient .book .page1 > div > div {
+/*.night.ambience .book .page1 > div > div {
     background: #080A38;
 }*/
 
-.night.ambient .book .page1 span {
+.night.ambience .book .page1 span {
     font-weight: bold;
     font-size: 1.2em;
     color: #00a1ee;
