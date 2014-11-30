@@ -8,7 +8,7 @@ This demo has originally been developed for MDN (Mozilla Developer Network) as p
 
 - [Responding to light conditions - MDN App Center](https://developer.mozilla.org/en-US/Apps/Developing/gather_and_modify_data/Responding_to_light_conditions)
 
-Try it [live](http://goo.gl/Dzc59h).
+Try it [live](http://franciov.github.io/xmas-tales/).
 
 ## Notes
 
