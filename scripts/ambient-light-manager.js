@@ -1,6 +1,6 @@
 
 var AmbientLightManager = {
-    /* 
+    /*
      * init
      * Initialize the object
      */
@@ -14,30 +14,31 @@ var AmbientLightManager = {
 
         var _self = this;
 
-        /* Ambient Light Events */
-        window.addEventListener('devicelight', function(deviceLightEvent) {
+        /* Ambient Light Sensor */
 
-            /* Debug */
-            console.log(deviceLightEvent);
+        var sensor = new AmbientLightSensor();
+        sensor.start();
+        sensor.onchange = function(event) {
+            _self.printLux(event.reading.illuminance);
 
             /* Ambient light level (lux) to screen */
-            _self.printLux(deviceLightEvent.value);
+            _self.printLux(event.reading.illuminance);
 
             /* Check ambient light status */
-            if (deviceLightEvent.value > 500) { // snow
+            if (event.reading.illuminance > 500) { // snow
                 _self.setSnow();
             }
-            else if (deviceLightEvent.value > 100) { // morning
+            else if (event.reading.illuminance > 100) { // morning
                 _self.setMorning();
             }
-            else if (deviceLightEvent.value > 10) { // evening
+            else if (event.reading.illuminance > 10) { // evening
                 _self.setEvening();
             }
             else { // night
                 _self.setNight();
             }
+        };
 
-        });
     },
     /*
      * printLux
